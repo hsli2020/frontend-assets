@@ -1,0 +1,253 @@
+div#issv-panel {
+  z-index: 9999;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  div#issv-panel > iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none; }
+  div#issv-panel > a.issv-btn-close {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0Q5MzAxODNENUVDMTFFNDk3M0VEQzREQ0M3NTFBMTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0Q5MzAxODRENUVDMTFFNDk3M0VEQzREQ0M3NTFBMTUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozRDkzMDE4MUQ1RUMxMUU0OTczRURDNERDQzc1MUExNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozRDkzMDE4MkQ1RUMxMUU0OTczRURDNERDQzc1MUExNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmW4d4wAAACJSURBVHjaYpw5cyYDEMgB8SMG7AAsxwQkFIH4LBDbYVFkB5VTBCm8D8QhQLwWTbEdVCwUpIYFKngQSXEwVAym6ACIw4JkAkzxJig/AKYIBJjQ3PQfBxtFIcxNIJP8gXgNENujK4QpCoFaB3MGXDFIoQKSooNY3AxSrAjyzAMgNsYR4AdhcgABBgAySSEp+EJxtQAAAABJRU5ErkJggg==) center center no-repeat;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0; }
+
+div#issv-panel.issv-type-tab,
+div#issv-panel.issv-type-banner,
+div#issv-panel.issv-type-floating {
+  width: 350px;
+  height: 100%;
+  top: 0;
+  bottom: initial; }
+
+div#issv-panel.issv-type-tab.issv-layout-left,
+div#issv-panel.issv-type-banner.issv-layout-left,
+div#issv-panel.issv-type-floating.issv-layout-left {
+  left: -370px;
+  right: initial; }
+
+div#issv-panel.issv-type-tab.issv-layout-left.issv-status-open,
+div#issv-panel.issv-type-banner.issv-layout-left.issv-status-open,
+div#issv-panel.issv-type-floating.issv-layout-left.issv-status-open {
+  left: 0;
+  right: initial; }
+
+div#issv-panel.issv-type-tab.issv-layout-right,
+div#issv-panel.issv-type-banner.issv-layout-right,
+div#issv-panel.issv-type-floating.issv-layout-right {
+  left: initial;
+  right: -370px; }
+
+div#issv-panel.issv-type-tab.issv-layout-right.issv-status-open,
+div#issv-panel.issv-type-banner.issv-layout-right.issv-status-open,
+div#issv-panel.issv-type-floating.issv-layout-right.issv-status-open {
+  left: initial;
+  right: 0; }
+
+div#issv-panel.issv-type-tab.issv-layout-full,
+div#issv-panel.issv-type-banner.issv-layout-full,
+div#issv-panel.issv-type-floating.issv-layout-full {
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  right: initial;
+  top: 110%;
+  bottom: initial; }
+
+div#issv-panel.issv-type-tab.issv-layout-full.issv-status-open,
+div#issv-panel.issv-type-banner.issv-layout-full.issv-status-open,
+div#issv-panel.issv-type-floating.issv-layout-full.issv-status-open {
+  top: 10%;
+  bottom: initial; }
+
+div#issv-label {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  border: none;
+  height: 0;
+  overflow: hidden; }
+  div#issv-label > a.issv-btn-open {
+    display: block;
+    padding: 17px 10px 17px 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+    background: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    div#issv-label > a.issv-btn-open > img {
+      display: block;
+      max-width: 90%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto; }
+  div#issv-label > a.issv-btn-open:hover {
+    text-decoration: none;
+    background: #ffffff;
+    opacity: 0.6; }
+  div#issv-label > a.issv-btn-close {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0Q5MzAxODNENUVDMTFFNDk3M0VEQzREQ0M3NTFBMTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0Q5MzAxODRENUVDMTFFNDk3M0VEQzREQ0M3NTFBMTUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozRDkzMDE4MUQ1RUMxMUU0OTczRURDNERDQzc1MUExNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozRDkzMDE4MkQ1RUMxMUU0OTczRURDNERDQzc1MUExNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmW4d4wAAACJSURBVHjaYpw5cyYDEMgB8SMG7AAsxwQkFIH4LBDbYVFkB5VTBCm8D8QhQLwWTbEdVCwUpIYFKngQSXEwVAym6ACIw4JkAkzxJig/AKYIBJjQ3PQfBxtFIcxNIJP8gXgNENujK4QpCoFaB3MGXDFIoQKSooNY3AxSrAjyzAMgNsYR4AdhcgABBgAySSEp+EJxtQAAAABJRU5ErkJggg==) center center no-repeat;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px; }
+
+div#issv-label.issv-status-open {
+  height: auto; }
+
+div#issv-label.issv-status-done {
+  height: 0; }
+
+div#issv-label.issv-type-tab {
+  z-index: 9998;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 300px;
+  top: initial;
+  bottom: 20px; }
+
+div#issv-label.issv-type-tab.issv-layout-bottom {
+  top: initial;
+  bottom: 20px; }
+
+div#issv-label.issv-type-tab.issv-layout-top {
+  top: 20px;
+  bottom: initial; }
+
+div#issv-label.issv-type-tab.issv-layout-left {
+  left: -340px;
+  right: initial; }
+
+div#issv-label.issv-type-tab.issv-layout-right {
+  left: initial;
+  right: -340px; }
+
+div#issv-label.issv-type-tab.issv-layout-left.issv-status-open {
+  left: 20px; }
+
+div#issv-label.issv-type-tab.issv-layout-right.issv-status-open {
+  right: 20px; }
+
+div#issv-label.issv-type-tab.issv-status-done {
+  height: auto; }
+
+@media (max-width: 420px) {
+  div#issv-panel > a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    top: 0;
+    right: 0; }
+
+  div#issv-panel.issv-type-banner,
+  div#issv-panel.issv-type-banner.issv-layout-left,
+  div#issv-panel.issv-type-banner.issv-layout-right,
+  div#issv-panel.issv-type-banner.issv-layout-full,
+  div#issv-panel.issv-type-floating,
+  div#issv-panel.issv-type-floating.issv-layout-left,
+  div#issv-panel.issv-type-floating.issv-layout-right,
+  div#issv-panel.issv-type-floating.issv-layout-full,
+  div#issv-panel.issv-type-tab,
+  div#issv-panel.issv-type-tab.issv-layout-left,
+  div#issv-panel.issv-type-tab.issv-layout-right,
+  div#issv-panel.issv-type-tab.issv-layout-full {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 110%;
+    bottom: initial; }
+
+  div#issv-panel.issv-type-banner.issv-status-open,
+  div#issv-panel.issv-type-banner.issv-layout-left.issv-status-open,
+  div#issv-panel.issv-type-banner.issv-layout-right.issv-status-open,
+  div#issv-panel.issv-type-banner.issv-layout-full.issv-status-open,
+  div#issv-panel.issv-type-floating.issv-status-open,
+  div#issv-panel.issv-type-floating.issv-layout-left.issv-status-open,
+  div#issv-panel.issv-type-floating.issv-layout-right.issv-status-open,
+  div#issv-panel.issv-type-floating.issv-layout-full.issv-status-open,
+  div#issv-panel.issv-type-tab.issv-status-open,
+  div#issv-panel.issv-type-tab.issv-layout-left.issv-status-open,
+  div#issv-panel.issv-type-tab.issv-layout-right.issv-status-open,
+  div#issv-panel.issv-type-tab.issv-layout-full.issv-status-open {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: initial;
+    top: 0;
+    bottom: initial; }
+
+  div#issv-label.issv-type-tab {
+    width: 100%;
+    top: initial;
+    bottom: -50%; }
+    div#issv-label.issv-type-tab > a {
+      padding: 10px 10px 20px 10px; }
+
+  div#issv-label.issv-type-tab.issv-layout-bottom,
+  div#issv-label.issv-type-tab.issv-layout-top {
+    top: initial;
+    bottom: -50%; }
+
+  div#issv-label.issv-type-tab.issv-layout-left,
+  div#issv-label.issv-type-tab.issv-layout-left.issv-status-open {
+    left: 0;
+    right: initial; }
+
+  div#issv-label.issv-type-tab.issv-layout-right,
+  div#issv-label.issv-type-tab.issv-layout-right.issv-status-open {
+    left: initial;
+    right: 0; }
+
+  div#issv-label.issv-type-tab.issv-status-open,
+  div#issv-label.issv-type-tab.issv-layout-bottom.issv-status-open,
+  div#issv-label.issv-type-tab.issv-layout-top.issv-status-open {
+    bottom: 0; } }
+
+/*# sourceMappingURL=issv.css.map */

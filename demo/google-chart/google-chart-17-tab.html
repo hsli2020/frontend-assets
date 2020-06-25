@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table Query Wrapper Example</title>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="tablequerywrapper.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', {'packages' : ['table']});
+    google.charts.setOnLoadCallback(init);
+
+    var dataSourceUrl = 'https://spreadsheets.google.com/tq?key=rh_6pF1K_XsruwVr_doofvw&pub=1';
+    var query, options, container;
+
+    function init() {
+      query = new google.visualization.Query(dataSourceUrl);
+      container = document.getElementById("table");
+      options = {'pageSize': 5};
+      sendAndDraw();
+    }
+
+    function sendAndDraw() {
+      query.abort();
+      var tableQueryWrapper = new TableQueryWrapper(query, container, options);
+      tableQueryWrapper.sendAndDraw();
+    }
+
+    function setOption(prop, value) {
+      options[prop] = value;
+      sendAndDraw();
+    }
+
+  </script>
+</head>
+<body>
+<p>This example uses the following spreadsheet: <br />
+  <a href="https://spreadsheets.google.com/pub?key=rh_6pF1K_XsruwVr_doofvw">
+    https://spreadsheets.google.com/pub?key=rh_6pF1K_XsruwVr_doofvw
+  </a>
+</p>
+<form action="">
+  Number of rows to show:
+  <select onChange="setOption('pageSize', parseInt(this.value, 10))">
+    <option value="0">0</option>
+    <option value="3">3</option>
+    <option selected=selected value="5">5</option>
+    <option value="8">8</option>
+    <option value="-1">-1</option>
+  </select>
+</form>
+<br />
+<div id="table"></div>
+</body>
+</html>
